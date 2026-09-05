@@ -1,221 +1,101 @@
-# 🤖 AI Foundations, History & Terminology
+# AI Foundations, History & Terminology
 
-Short and simple notes covering the main concepts of Artificial Intelligence.
+Short notes on the fundamentals, history, and terminology of Artificial Intelligence.
 
-## 🧠 1. Intelligence
+## 1. Intelligence
 
-**Intelligence** = the ability to understand situations, learn from experience, connect ideas, solve problems, and achieve goals.
+**Intelligence** is the ability to learn, understand, solve problems, make decisions, and achieve goals.
 
-### Natural Intelligence
+* **Natural Intelligence:** Human and animal intelligence.
+* **Artificial Intelligence:** Machines performing tasks that normally require intelligence using data, algorithms, and models.
 
-Intelligence found in humans and animals.
+## 2. History of AI
 
-* Learning from experience
-* Emotions
-* Creativity
-* Common sense
-* Social understanding
-* Flexible decision-making
+* **1950 — Alan Turing:** Asked, "Can machines think?" and proposed the Turing Test.
+* **1956 — Dartmouth Conference:** AI became an established field; early systems used symbolic rules.
+* **AI Winters:** Periods when AI progress and funding declined because expectations were not met.
+* **2010s — Deep Learning:** Big Data and GPUs enabled major progress in neural networks.
+* **2017 — Transformers:** "Attention Is All You Need" introduced the Transformer architecture, which became important for modern language models.
+* **GPT:** Generative Pre-trained Transformer.
 
-### Artificial Intelligence
-
-Machines that simulate intelligent behavior using:
-
-* Data
-* Algorithms
-* Models
-* Software & hardware
-* Mathematical/statistical patterns
-
----
-
-# 🕰️ 2. History of AI
-
-### 1950 — Alan Turing
-
-* Asked: **"Can machines think?"**
-* Proposed the **Imitation Game / Turing Test**
-
-### 1956 — Dartmouth Conference
-
-* The term **Artificial Intelligence** was introduced.
-* Early AI focused on **Symbolic AI** and manually written rules.
-
-### Rule-Based AI
+## 3. AI → ML → DL → Generative AI
 
 ```text
-IF condition
-THEN action
-```
-
-Problem: real-world situations are too complex for humans to write every rule.
-
-### AI Winters
-
-Periods when AI research, funding, and excitement declined because AI failed to meet expectations.
-
-### 2010s — Deep Learning Boom
-
-Two major factors:
-
-* **Big Data**
-* **GPUs / Fast Hardware**
-
-These enabled neural networks to learn complex patterns from large datasets.
-
-### 2017 — Transformer Era
-
-The paper **"Attention Is All You Need"** introduced the Transformer architecture.
-
-Transformers improved how models understand relationships and context in text.
-
-**GPT = Generative Pre-trained Transformer**
-
----
-
-# 🪆 3. AI → ML → DL → Generative AI
-
-```text
-Artificial Intelligence (AI)
-        ↓
-Machine Learning (ML)
-        ↓
-Deep Learning (DL)
-        ↓
+AI
+ ↓
+Machine Learning
+ ↓
+Deep Learning
+ ↓
 Generative AI
 ```
 
-### AI
+* **AI:** Broad field of intelligent computer systems.
+* **ML:** Systems that learn patterns from data.
+* **DL:** ML using multi-layer neural networks.
+* **Generative AI:** Models that generate text, images, audio, video, or code.
 
-The broadest concept: computers performing tasks that appear intelligent.
-
-### Machine Learning
-
-AI that learns patterns from **data** instead of having every rule manually programmed.
-
-### Deep Learning
-
-Machine Learning using **multi-layer neural networks**.
-
-Used for:
-
-* Images
-* Speech
-* Text
-* Video
-* Complex pattern recognition
-
-### Generative AI
-
-Deep Learning systems that **create new content**.
-
-Examples:
-
-* Text
-* Images
-* Audio
-* Music
-* Code
-
----
-
-# 📦 4. AI Model
-
-A **model** is the learned result of training.
+## 4. Model, Training & Inference
 
 ```text
-Data
- ↓
-Training
- ↓
-Model
- ↓
-Inference
- ↓
-Output
+Data → Training → Model → Inference → Output
 ```
 
-**Training** = learning patterns.
+* **Training:** Learning patterns from data.
+* **Model:** The learned representation produced by training.
+* **Inference:** Using the model to produce results from new input.
 
-**Inference** = using the learned model on new input.
+## 5. ANI, AGI & ASI
 
----
+* **ANI:** AI designed for specific tasks.
+* **AGI:** Hypothetical AI capable of general human-level intellectual tasks.
+* **ASI:** Hypothetical AI that surpasses human intelligence.
 
-# 🎯 5. ANI, AGI & ASI
+```text
+ANI → Specialist
+AGI → General intelligence
+ASI → Beyond human intelligence
+```
 
-### ANI — Artificial Narrow Intelligence
+## 6. Foundation Models
 
-AI specialized in specific tasks.
+Large general-purpose models trained on broad datasets.
 
-**Example:** navigation, facial recognition, game-playing systems, LLMs.
-
-> ANI = Specialist
-
-### AGI — Artificial General Intelligence
-
-Hypothetical AI capable of performing a broad range of intellectual tasks at human level.
-
-> AGI = Human-level general intelligence
-
-### ASI — Artificial Superintelligence
-
-Hypothetical AI that surpasses human intelligence.
-
-> ASI = Beyond human intelligence
-
----
-
-# 🏗️ 6. Foundation Models
-
-Large general-purpose models trained on broad data.
-
-They can be adapted using:
+They can be adapted through:
 
 * Prompts
 * Tools
-* Retrieved data
+* Retrieved information
 * Fine-tuning
 
----
+## 7. Common AI Models
 
-# 🧰 7. Types of AI Models
+| Model            | Main Use                  |
+| ---------------- | ------------------------- |
+| LLM              | Text and code             |
+| Vision Model     | Images and video          |
+| Audio Model      | Speech and sound          |
+| Multimodal Model | Text, images, audio, etc. |
 
-| Model                | Used For             |
-| -------------------- | -------------------- |
-| **LLM**              | Text & code          |
-| **Vision Model**     | Images & video       |
-| **Audio Model**      | Speech & sound       |
-| **Multimodal Model** | Text + image + audio |
+## 8. LLM — Large Language Model
 
----
-
-# 💬 8. LLM — Large Language Model
-
-LLMs are **token predictors**.
-
-They generate responses by repeatedly predicting the next likely token.
+LLMs generate text by repeatedly predicting the next likely **token** based on the available context.
 
 ```text
 Prompt
  ↓
-Predict next token
+Predict token
  ↓
 Add token
- ↓
-Predict next token
  ↓
 Repeat
  ↓
 Response
 ```
 
-LLMs generate based on learned patterns and the context provided.
+## 9. Tokens
 
----
-
-# 🔤 9. Tokens
-
-LLMs process text as **tokens**, not necessarily complete words.
+Tokens are the pieces of text processed by an LLM.
 
 A token can be:
 
@@ -224,85 +104,64 @@ A token can be:
 * Punctuation
 * Other text pieces
 
-Tokens affect:
+Tokens affect context size, cost, speed, and response length.
 
-* Cost
-* Speed
-* Context limits
-* Input/output length
+## 10. Context Window
 
----
+The **context window** is the information a model can consider during a request.
 
-# 🧠 10. Context Window
+It may include:
 
-The **context window** is the amount of information a model can consider during a request.
-
-It can include:
-
-* System instructions
+* Instructions
 * User messages
 * Chat history
 * Documents
 * Retrieved information
-* Examples
-* Tool outputs
+* Tool results
 
-### Analogy
+**Simple idea:** Context window = the model's working information.
 
-> Context window = a **whiteboard** containing the information the model can currently use.
+## 11. Temperature
 
----
+Temperature controls the randomness of model output.
 
-# 🌡️ 11. Temperature
+| Temperature | Behavior         | Example          |
+| ----------- | ---------------- | ---------------- |
+| Low         | More predictable | Code, facts      |
+| Medium      | Balanced         | Chat, tutoring   |
+| High        | More varied      | Creative writing |
 
-Temperature controls how predictable or creative the model's output is.
+## 12. Hallucinations
 
-| Temperature | Behavior             | Good For                |
-| ----------- | -------------------- | ----------------------- |
-| **Low**     | Stable & predictable | Code, math, factual Q&A |
-| **Medium**  | Balanced             | Chatbots, tutoring      |
-| **High**    | Creative & varied    | Stories, brainstorming  |
+A **hallucination** happens when AI produces information that sounds correct but is actually wrong or invented.
 
----
+Examples:
 
-# ⚠️ 12. Hallucinations
+* Fake APIs
+* Non-existent packages
+* Incorrect technical information
 
-A **hallucination** occurs when AI produces an answer that sounds confident but is:
+**Developer rule:**
 
-* Wrong
-* Invented
-* Unsupported
+> Never blindly trust AI output. Verify and test it.
 
-Example:
+## 13. AI in Everyday Software
 
-AI may invent a package, function, API, or technical fact that does not exist.
+AI is used in:
 
-### Developer Rule
+* Recommendation systems
+* Spam filters
+* Navigation
+* Code assistants
+* Customer support
+* Semantic search
+* Face recognition
+* Voice assistants
 
-> **Never blindly trust AI output. Verify and test it.**
-
----
-
-# 👨‍💻 13. AI in Everyday Life
-
-Common examples:
-
-* 🎬 Recommendation systems
-* 📧 Spam filters
-* 🗺️ Navigation
-* 💻 Code assistants
-* 💬 Customer support bots
-* 🔎 Semantic search
-* 👤 Face recognition
-* 🎤 Voice assistants
-
-
----
-
-# 🎯 Final Lesson
+## Final Lesson
 
 > **AI is a co-pilot, not the captain.**
 
-Understand what AI produces, **test it, verify it, and take responsibility for the final application**.
+Use AI to work faster, but **understand, verify, test, and take responsibility for the final result**.
 
-The goal is not to memorize every term. The goal is to understand how **AI models become part of real software applications**.
+The goal is not to memorize every AI term. The goal is to understand how AI models become part of real software applications.
